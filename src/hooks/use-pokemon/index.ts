@@ -83,7 +83,7 @@ export default function usePokemon(): Out {
       each = filter(
         each,
         (item) =>
-          includes(item.name, form.search) ||
+          includes(item.name.toLowerCase(), form.search?.toLowerCase()) ||
           includes(item.national_number, form.search)
       );
     }
