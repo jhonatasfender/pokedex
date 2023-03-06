@@ -1,0 +1,112 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form should initialize with default parameters 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+  z-index: 4;
+}
+
+.c2 {
+  max-width: 30rem;
+  min-width: 30rem;
+}
+
+.c1 {
+  border: 0.1rem solid hsl(0,0%,80%);
+  border-radius: 0.4rem;
+  height: 3.6rem;
+  padding: 0 1rem;
+}
+
+.c1:focus {
+  outline: none;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+<form
+  class="c0"
+  role="form"
+>
+  <input
+    class="c1"
+    name="search"
+    type="text"
+  />
+  <select
+    class="c2"
+    multiple=""
+    options="[object Object]"
+  >
+    <option
+      value="test"
+    >
+      test
+    </option>
+  </select>
+  <select
+    options="[object Object],[object Object],[object Object],[object Object]"
+  >
+    <option
+      value="name,asc"
+    >
+      Nome ASC
+    </option>
+    <option
+      value="name,desc"
+    >
+      Nome DESC
+    </option>
+    <option
+      value="national_number,asc"
+    >
+      Registro Nacional ASC
+    </option>
+    <option
+      value="national_number,desc"
+    >
+      Registro Nacional DESC
+    </option>
+  </select>
+  <div
+    class="c3"
+  >
+    <label
+      for="only-like"
+    >
+      Filtrar somente os favoritados
+    </label>
+    <input
+      id="only-like"
+      name="onlyLike"
+      type="checkbox"
+    />
+  </div>
+</form>
+`;

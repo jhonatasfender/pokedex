@@ -14,7 +14,7 @@ export type Sprites = {
 
 export type Pokemon = {
   national_number: string;
-  evolution: Evolution;
+  evolution: Evolution | null;
   sprites: Sprites;
   name: string;
   type: string[];
@@ -77,8 +77,6 @@ export default function usePokemon(): Out {
   };
 
   const search = (form: Partial<FormInputsProps>): void => {
-    console.log(form);
-
     let each: Pokemon[] = refList.current;
 
     if (!!form.search) {
@@ -108,8 +106,6 @@ export default function usePokemon(): Out {
       ];
       each = orderBy(each, [field], [direction]);
     }
-
-    console.log(each);
 
     setList(each);
   };

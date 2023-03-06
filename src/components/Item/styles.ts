@@ -29,7 +29,7 @@ export const Like = styled(FontAwesomeIcon)<LikeProps>`
   transition-delay: 0.2s;
 `;
 
-export const WrapperItem = styled.div`
+export const WrapperItem = styled.div.attrs({ role: "card" })`
   --color: ${({ theme }) => theme.colors.primary};
 
   display: inherit;

@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header should initialize with default parameters 1`] = `
+<img
+  alt="pokemon"
+  src="https://img.pokemondb.net/sprites/omega-ruby-alpha-sapphire/dex/normal/bulbasaur.png"
+/>
+`;
+
+exports[`Header should initialize with default parameters with error 1`] = `
+<img
+  alt="pokemon"
+  src="https://img.pokemondb.net/sprites/omega-ruby-alpha-sapphire/dex/normal/bulbasaur.pn"
+/>
+`;

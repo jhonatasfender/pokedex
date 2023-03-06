@@ -1,7 +1,7 @@
 import Select from "react-select";
 import styled from "styled-components";
 
-export const Wrapper = styled.form`
+export const Wrapper = styled.form.attrs({ role: "form" })`
   display: flex;
   justify-content: center;
   align-items: center;

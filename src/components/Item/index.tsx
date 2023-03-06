@@ -23,6 +23,7 @@ export default function Item({ item, onLike }: ItemProps) {
       ))}
 
       <S.Like
+        aria-hidden={false}
         fixed={!!item.like}
         icon={item.like ? faHeart : farHeart}
         onClick={() => onLike(item)}
